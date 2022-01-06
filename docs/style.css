@@ -1,0 +1,36 @@
+.ball{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-color: aqua;
+}
+
+.bounce{
+    animation: bounce 3s linear 0s infinite alternate;
+}
+
+.bounceA{
+    animation: bounceA 1.5s ease-in 0s infinite alternate;
+}
+
+/*quer animation*/
+@keyframes bounce{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(calc(100vw - 10vmin));
+    }
+}
+
+/*oben nach unten*/
+@keyframes bounceA {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(calc(100vh - 10vmin));
+    }
+}
